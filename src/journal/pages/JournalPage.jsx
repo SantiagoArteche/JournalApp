@@ -10,6 +10,8 @@ export const JournalPage = () => {
   const { active, isSaving } = useSelector((state) => state.journal);
 
   const onClickNewNote = () => dispatch(startNewNote());
+
+  document.title = "Journal App";
   return (
     <JournalLayout>
       {!!active ? <NoteView /> : <NothingSelectedView />}
