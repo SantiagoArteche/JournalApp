@@ -45,6 +45,7 @@ export const LoginPage = () => {
 
   const isAuthenticated = useMemo(() => status === "checking", [status]);
 
+  document.title = "Journal App - Login";
   return (
     <AuthLayout title="Login">
       <Box

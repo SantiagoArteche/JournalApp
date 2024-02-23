@@ -20,7 +20,7 @@ export const NothingSelectedView = () => {
       </Grid>
       <Grid item xs={12}>
         <Typography color="white" variant="h5">
-          Selecciona o crea una entrada
+          Select or create an entry
         </Typography>
       </Grid>
     </Grid>

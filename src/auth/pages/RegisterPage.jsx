@@ -30,6 +30,7 @@ export const RegisterPage = () => {
     () => status === "checking",
     [status]
   );
+  document.title = "Journal App - Register";
   return (
     <AuthLayout title="Register">
       <Box
