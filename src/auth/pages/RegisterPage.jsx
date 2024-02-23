@@ -5,6 +5,7 @@ import { useFormik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { startCreatingUserWithEmailPassword } from "../../store/auth/thunks";
 import { useMemo } from "react";
+import { Link } from "react-router-dom";
 
 export const RegisterPage = () => {
   const { handleChange, handleSubmit, values, resetForm, errors } = useFormik({
@@ -100,6 +101,13 @@ export const RegisterPage = () => {
               >
                 <Typography>Create Account</Typography>
               </Button>
+            </Grid>
+            <Grid item xs={12} mt={1.5} display="flex" justifyContent="end">
+              <Link to="/auth/login">
+                <Typography sx={{ textDecoration: "underline" }}>
+                  Back to login
+                </Typography>
+              </Link>
             </Grid>
           </Grid>
         </Grid>
